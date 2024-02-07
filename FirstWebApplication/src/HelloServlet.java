@@ -35,7 +35,6 @@ public class HelloServlet extends HttpServlet {
 		String sem=request.getParameter("s1");
 		pw.println("<h1>Welcome:"+s+" "+t);
 		pw.println("<h1>Your Course:" +course);
-		pw.println("<h1>Semester:"+sem);
 		
 		
 		

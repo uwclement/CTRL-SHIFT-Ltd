@@ -26,7 +26,8 @@
         font-weight: bold;
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="password"] {
         width: 100%;
         padding: 8px;
         margin-bottom: 20px;
@@ -69,20 +70,21 @@
 </style>
 </head>
 <body>
-   <h1 style= center>First Question</h1>
+   <h1 >First Question</h1>
     <form method="get" action="HelloServlet">
         <label for="t1">Enter your First Name:</label>
-        <input type="text" id="t1" name="t1">
+        <input type="text" id="t1" name="t1" required>
         
         <label for="t2">Enter your Last Name:</label>
-        <input type="text" id="t2" name="t2">
+        <input type="text" id="t2" name="t2" required>
         
         <label for="c1">Enter Course:</label>
-        <input type="text" id="c1" name="c1">
+        <input type="text" id="c1" name="c1" required>
+     
         
-        <label for="s1">Enter Your Semester:</label>
-        <input type="text" id="s1" name="s1">
-        
+        <label for="s1">Password:</label>
+        <input type="password" id="s1" name="p"required>
+        <br>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
     </form>
